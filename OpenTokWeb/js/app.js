@@ -53,13 +53,12 @@ $(document).ready(function() {
 // (optional) add server code here
 initializeSession();
 function stoppublish() {
-  alert("Disconnection requested");
   session.disconnect();
+  window.close();
 }
 function changeAudioStatus() {
   try {
     if (publisher !== null && publisher !== "undefined") {
-      alert(audioIconStatus);
       publisher.publishAudio(audioIconStatus);
     }
   } catch (err) {
@@ -69,7 +68,6 @@ function changeAudioStatus() {
 function changeVideoStatus() {
   try {
     if (publisher !== null && publisher !== "undefined") {
-      alert(videoIconStatus);
       publisher.publishVideo(videoIconStatus);
     }
   } catch (err) {
