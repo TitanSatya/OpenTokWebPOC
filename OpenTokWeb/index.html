@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title> OPENTOK SATYA </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link href="css/app.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://static.opentok.com/v2/js/opentok.min.js"></script>
+</head>
+<body>
+ 
+    <div id="videos">
+	<div id="menuStrip">
+    <button class="myButton" onclick="stoppublish()" id="disconnectButton">
+    <i class="fas fa-phone-slash"></i></button>
+	<button class="myButton" id="disconnectVideoButton">
+    <i class="fas fa-video"></i></button>
+	<button class="myButton" id="muteButton">
+     <i class="fas fa-volume-up"></i></button>
+	</div>
+        <div id="subscriber"></div>
+        <div id="publisher"></div>
+        
+    </div>
+  
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
