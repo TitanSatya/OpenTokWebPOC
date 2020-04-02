@@ -54,7 +54,6 @@ $(document).ready(function() {
 initializeSession();
 function stoppublish() {
   session.disconnect();
-  window.close();
 }
 function changeAudioStatus() {
   try {
@@ -133,6 +132,6 @@ function initializeSession() {
     }
   });
   session.on("sessionDisconnected", function sessionDisconnected(event) {
-    console.log("You were disconnected from the session.", event.reason);
+    window.close();
   });
 }
